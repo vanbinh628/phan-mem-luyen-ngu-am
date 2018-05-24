@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.web.WebView?>
+
+<Pane fx:id="panebg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="71.0" layoutY="48.0" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #ffff;">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="450.0" fitWidth="700.0" />
+         </children>
+      </Pane>
+      <Button fx:id="playButton" layoutX="71.0" layoutY="509.0" mnemonicParsing="false" text="&gt;" />
+      <Slider fx:id="timeSlider" layoutX="118.0" layoutY="515.0" prefHeight="14.0" prefWidth="440.0" />
+      <Slider fx:id="volumeSlider" layoutX="699.0" layoutY="515.0" prefHeight="14.0" prefWidth="64.0" />
+      <Label fx:id="playTime" layoutX="566.0" layoutY="513.0" text="Label" />
+      <WebView fx:id="web" layoutX="795.0" layoutY="452.0" prefHeight="86.0" prefWidth="418.0" />
+      <TabPane layoutX="796.0" layoutY="50.0" prefHeight="370.0" prefWidth="415.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabsub" text="sub phim">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="341.0" prefWidth="391.0">
+                     <children>
+                        <ListView fx:id="list" layoutX="-5.0" prefHeight="345.0" prefWidth="420.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabyeu" text="yêu thích">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listyeu" layoutX="-1.0" layoutY="-2.0" prefHeight="345.0" prefWidth="417.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

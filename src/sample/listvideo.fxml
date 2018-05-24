@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListMovieControl">
+   <content>
+      <Pane prefHeight="1004.0" prefWidth="1360.0">
+         <children>
+            <Label layoutX="67.0" layoutY="67.0" text="Phim Hoạt Hình">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listhoathinh" layoutX="67.0" layoutY="115.0" prefHeight="220.0" prefWidth="1000.0" />
+            <Label layoutX="68.0" layoutY="357.0" text="Phim Hành động">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listhanhdong" layoutX="62.0" layoutY="416.0" prefHeight="223.0" prefWidth="1000.0" />
+            <Label layoutX="63.0" layoutY="671.0" text="Phim Cấp Độ Dễ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listcdDe" layoutX="64.0" layoutY="728.0" prefHeight="200.0" prefWidth="1000.0" />
+            <ImageView fitHeight="532.0" fitWidth="236.0" layoutX="1096.0" layoutY="112.0" pickOnBounds="true">
+               <image>
+                  <Image url="/drawable/list.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="975.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="chọn file" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>
